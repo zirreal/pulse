@@ -1,0 +1,180 @@
+@import './mixins';
+@import './fonts';
+@import './vars';
+
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Museo-sans', sans-serif;
+  font-size: 14px;
+  overflow-anchor: none;
+}
+
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:focus-visible {
+    padding: 3px;
+    outline: none;
+    box-shadow: 0 0 0 3px $guardsman-red-color  ;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 116px;
+}
+
+.btn {
+  padding: 15px 20px;
+  color: $color-light;
+  font-weight: 500;
+  background-color: $guardsman-red-color;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 4px 3px rgb(146, 79, 79);
+
+  }
+
+  &:hover {
+    color: $guardsman-red-color;
+    background-color: $color-light;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.link {
+  transition: color 0.3s ease-in-out, opacity 0.25s ease-in-out;
+  &:hover {
+    color: $guardsman-red-color
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.title {
+  @include title;
+}
+
+ul {
+  @include list-reset;
+}
+
+button {
+  @include btn-reset;
+}
+
+p {
+  @include paragraph-reset;
+}
+
+.visually-hidden {
+  @include visually-hidden
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px; 
+  color: $color-light;   
+}
+
+.text-red {
+  color: $guardsman-red-color
+}
+
+.consult-btn {
+  padding: 12px 41px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.icon-up {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 2px $cod-gray-color;
+  transition: box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &__img circle,
+  &__img circle + path {
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:hover {
+    .icon-up__img circle + path,
+    .icon-up__img circle{
+      fill: $cod-gray-color !important;
+    }
+    box-shadow: 3px 3px 20px $cod-gray-color;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &.active {
+    display: block;
+  }
+
+}
+ 

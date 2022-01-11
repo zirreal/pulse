@@ -1,0 +1,76 @@
+.hero {
+    margin-top: -87px;
+    padding-top: 180px;
+    padding-bottom: 95px;
+    background-image: url(../img/first-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        color: $color-light;
+        text-transform: uppercase;
+    }
+
+    &__sub-title {
+        margin-bottom: 60px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        color: $color-light;
+        text-transform: uppercase;
+    }
+
+    &__block {
+        margin-bottom: 66px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        max-width: 25%;
+        padding-top: 65px;
+        background-size: 42px 46px;
+        background-position: top;
+        background-repeat: no-repeat;
+        color: $color-light;
+        text-align: center;
+        &:not(:last-child) {
+            margin-right: 28px;
+        }
+    }
+
+    &__order {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__btn {
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: $color-light;
+    }
+
+    &__link {
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+}

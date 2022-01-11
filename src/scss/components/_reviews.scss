@@ -1,0 +1,60 @@
+.reviews {
+    padding-top: 79px;
+    padding-bottom: 26px;
+
+    &__title {
+        margin-bottom: 60px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        color: $cod-gray-color;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+
+        &:not(:last-child) {
+            margin-bottom: 55px;
+        }
+
+        &-left {
+            width: calc((100% / 2) - 165px);
+        }
+
+        &-right {
+            width: 100%;
+            padding-right: 70px;
+        }
+    }
+
+    &__sub-title {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $dove-gray-color;
+    }
+
+    &__person-info {
+        margin-bottom: 10px;
+    }
+
+    &__paragraph {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: $cod-gray-color;
+
+        &:not(:last-of-type) {
+            margin-bottom: 10px;
+        }
+    }
+
+}

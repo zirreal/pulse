@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+
+@font-face {
+  font-family: 'Museo-sans';
+  src: url('../fonts/museosanscyrl-light-300-webfont.woff2'),
+    url('../fonts/museosanscyrl-light-300-webfont.woff');
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Museo-sans';
+  src: url('../fonts/museosanscyrl-medium-500-webfont.woff2'),
+    url('../fonts/museosanscyrl-medium-500-webfont.woff');
+  font-display: swap;
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: 'Museo-sans';
+  src: url('../fonts/museosanscyrl-bold-700-webfont.woff2'),
+      url('../fonts/museosanscyrl-light-300-webfont.woff');
+  font-display: swap;
+  font-weight: 700;
+}

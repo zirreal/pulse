@@ -1,0 +1,41 @@
+.header {
+    padding-top: 22px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__representative {
+        padding-right: 88px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        color: $color-light;
+        text-align: center;
+
+        &-name {
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &-phone {
+            margin-bottom: 5px;
+        }
+
+        &-btn {
+            padding: 6px 11px;
+            font-size: 12px;
+            line-height: 19px;
+        }
+    }
+
+}

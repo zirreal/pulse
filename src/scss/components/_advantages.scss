@@ -1,0 +1,63 @@
+.advantages {
+    padding-top: 70px;
+    padding-bottom: 67px;
+    background-color: #f6f6f6;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 60px;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 30px;
+        color: $cod-gray-color;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: calc((100% / 3) - 52px );
+        padding-top: 106px;
+        &--cup {
+            background: url(../img/cup.png) top/70px 70px no-repeat;
+        }
+        &--heart {
+            background-image: url(../img/heart.png) top/70px 70px no-repeat;
+            animation-name: heartbeat;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        &--shoe {
+            background-image: url(../img/shoe.png) top/70px 70px no-repeat;
+        }
+    }
+
+    &__sub-title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        color: $cod-gray-color;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: $cod-gray-color;
+    }
+
+}
+
+.text-accent {
+    font-family: 'MuseoModerno';
+    font-weight: 300;
+    text-decoration: underline;
+    color: #FF0000;
+}
