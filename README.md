@@ -10,7 +10,7 @@
 
 Верстка одностраничного сайта пульсометров RunSmart
 
-Результат можно увидеть здесь:
+Результат можно увидеть здесь: https://zirreal.github.io/pulse/
  
 
 ## Основные особенности:
@@ -41,7 +41,7 @@ a simple landing
 
 Simple landing for heart rate monitors store
 
-You can check out the result here::
+You can check out the result here: https://zirreal.github.io/pulse/
  
 
 ## Key Features:
