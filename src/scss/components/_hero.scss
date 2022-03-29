@@ -42,13 +42,22 @@
     &__item {
         max-width: 25%;
         padding-top: 65px;
-        background-size: 42px 46px;
-        background-position: top;
-        background-repeat: no-repeat;
         color: $color-light;
         text-align: center;
         &:not(:last-child) {
             margin-right: 28px;
+        }
+
+        &--time {
+            background: url('../img/time.png') top/42px 46px no-repeat;
+        }
+
+        &--shipping {
+            background: url('../img/shipping.png') top/42px 46px no-repeat;
+        }
+
+        &--question {
+            background: url('../img/questions.png') top/42px 46px no-repeat;
         }
     }
 

@@ -26,9 +26,9 @@ $(document).ready(function(){
         });
     };
 
-    validateForms('.modal-order .form');
-    validateForms('#consultation-form');
-    validateForms('.modal-consultation .form');
+    validateForms('.modal__form');
+    validateForms('.consultation__form');
+    validateForms('.modal__form');
 
 
     // phone mask

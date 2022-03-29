@@ -21,10 +21,10 @@
         width: calc((100% / 3) - 52px );
         padding-top: 106px;
         &--cup {
-            background: url(../img/cup.png) top/70px 70px no-repeat;
+            background: url('../img/cup.png') top/70px 70px no-repeat;
         }
         &--heart {
-            background-image: url(../img/heart.png) top/70px 70px no-repeat;
+            background: url('../img/heart.png') top/70px 70px no-repeat;
             animation-name: heartbeat;
             animation-duration: 3s;
             animation-timing-function: ease;
@@ -34,7 +34,7 @@
             }
         }
         &--shoe {
-            background-image: url(../img/shoe.png) top/70px 70px no-repeat;
+            background: url('../img/shoe.png') top/70px 70px no-repeat;
         }
     }
 

@@ -181,13 +181,13 @@ const stylesBuild = () => {
 
 const scriptsBuild = () => {
     return src([
-        'src/js/components/**/*.js',
-        'src/js/main.js'
+        'src/js/**/*.js',
+        'src/js/main.js',
     ])
     .pipe(babel({
         presets: ['@babel/env']
     }))
-    .pipe(concat('app.js'))
+    .pipe(concat('main.js'))
     .pipe(uglify({
         toplevel: true,
     }).on('error', notify.onError()))
